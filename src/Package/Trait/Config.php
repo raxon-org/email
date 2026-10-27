@@ -1,6 +1,11 @@
 <?php
 namespace Package\Raxon\Email\Trait;
 
+use Defuse\Crypto\Crypto;
+use Defuse\Crypto\Exception\BadFormatException;
+use Defuse\Crypto\Exception\EnvironmentIsBrokenException;
+use Defuse\Crypto\Exception\WrongKeyOrModifiedCiphertextException;
+use Defuse\Crypto\Key;
 use Exception;
 use Raxon\Module\Dir;
 use Raxon\Module\Core;
