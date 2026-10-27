@@ -26,6 +26,10 @@
               "type": "integer"
             },
             {
+              "name": "crypt_url",
+              "type": "string"
+            },
+            {
               "name": "is",
               "type": "object",
               "property": [

@@ -14,6 +14,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -41,6 +42,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -68,6 +70,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -95,6 +98,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -122,6 +126,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -149,6 +154,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -176,6 +182,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -203,6 +210,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -230,6 +238,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -257,6 +266,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
@@ -284,6 +294,7 @@
                     "password",
                     "host",
                     "port",
+                    "crypt_url",
                     "is"
                   ],
                   "object": {
