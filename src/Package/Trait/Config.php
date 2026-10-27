@@ -45,7 +45,7 @@ trait Config {
         if(!Dir::is($email_dir)){
             Dir::create($email_dir, Dir::CHMOD);
         }
-        $crypt_dir = $email_dir . '/Crypt/';
+        $crypt_dir = $email_dir . 'Crypt/';
         if(!Dir::is($crypt_dir)){
             Dir::create($crypt_dir, Dir::CHMOD);
         }
