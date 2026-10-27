@@ -1,0 +1,67 @@
+{
+    "Node": {
+        "#class": "System.Email.Config",
+        "type": "object",
+        "property": [
+            {
+                "name": "user",
+                "type": "uuid",
+                "relation": true,
+                "is_multiple": false
+            },
+            {
+              "name": "username",
+              "type": "string"
+            },
+            {
+              "name": "password",
+              "type": "string"
+            },
+            {
+              "name": "host",
+              "type": "string"
+            },
+            {
+              "name": "port",
+              "type": "integer"
+            },
+            {
+              "name": "is",
+              "type": "object",
+              "property": [
+                {
+                  "name": "default",
+                  "type": "boolean"
+                },
+                {
+                  "name": "created",
+                  "type": "datetime"
+                },
+                {
+                  "name": "deleted",
+                  "type": "datetime"
+                }
+              ]
+            },
+            {
+                "name": "uuid",
+                "type": "uuid"
+            },
+            {
+                "name": "#class",
+                "type": "string"
+            }
+        ]
+    },
+    "is.unique": [
+        "username",
+        "host"
+    ],
+    "relation": [
+        {
+            "type": "one-one",
+            "class": "Account.User",
+            "attribute": "user"
+        }
+    ]
+}

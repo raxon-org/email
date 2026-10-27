@@ -1,0 +1,305 @@
+{
+    "System": {
+        "Email": {
+          "Config": {
+            "count": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "list": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "page": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "read": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "record": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "create": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "create_many": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "put": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "put_many": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "patch": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "patch_many": {
+              "output": [
+                {
+                  "role": "ROLE_SYSTEM",
+                  "property": [
+                    "uuid",
+                    "#class",
+                    "user",
+                    "username",
+                    "password",
+                    "host",
+                    "port",
+                    "is"
+                  ],
+                  "object": {
+                    "is": {
+                      "multiple": false,
+                      "output": [
+                        "default",
+                        "created",
+                        "deleted"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+    }
+}

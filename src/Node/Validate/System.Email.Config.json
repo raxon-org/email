@@ -1,0 +1,128 @@
+{
+    "System": {
+        "FileSystem": {
+          "Recycle": {
+            "create": {
+              "validate": {
+                "uuid": [
+                  {
+                    "is.uuid": true
+                  }
+                ],
+                "username": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "password": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "host": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "port": [
+                  {
+                    "integer": [
+                      ">=1",
+                      "<=65535"
+                    ]
+                  }
+                ],
+                "user": [
+                  {
+                    "is.uuid": true,
+                    "user.is.active": {
+                      "attribute": "user"
+                    }
+                  }
+                ]
+              }
+            },
+            "put": {
+              "validate": {
+                "uuid": [
+                  {
+                    "is.uuid": true
+                  }
+                ],
+                "username": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "password": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "host": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "port": [
+                  {
+                    "integer": [
+                      ">=1",
+                      "<=65535"
+                    ]
+                  }
+                ],
+                "user": [
+                  {
+                    "is.uuid": true,
+                    "user.is.active": {
+                      "attribute": "user"
+                    }
+                  }
+                ]
+              }
+            },
+            "patch": {
+              "validate": {
+                "uuid": [
+                  {
+                    "is.uuid": true
+                  }
+                ],
+                "username": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "password": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "host": [
+                  {
+                    "string.length": ">=1"
+                  }
+                ],
+                "port": [
+                  {
+                    "integer": [
+                      ">=1",
+                      "<=65535"
+                    ]
+                  }
+                ],
+                "?user": [
+                  {
+                    "is.uuid": true,
+                    "user.is.active": {
+                      "attribute": "user"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+    }
+}

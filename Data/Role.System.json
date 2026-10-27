@@ -1,0 +1,95 @@
+{
+  "name" : "ROLE_SYSTEM",
+  "rank" : 1,
+  "#class": "Account.Role",
+  "permission": [
+    {
+      "name": "System:Email:import",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:record",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:record.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:create",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:create.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:count",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:commit",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:read",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:read.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:put",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:put.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:patch",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:patch.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:page",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:property.delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:list",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:list.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Email:rename",
+      "#class": "Account.Permission"
+    }
+  ]
+}
