@@ -32,6 +32,9 @@ trait Config {
             !property_exists($options, 'is') &&
             !property_exists($options, 'default')
         ){
+            if(!property_exists($options, 'is')){
+                $options->is = (object) [];
+            }
             $options->is->default = false;
         }
         $options->is->created = microtime(true);
