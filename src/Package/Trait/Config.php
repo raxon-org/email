@@ -11,6 +11,7 @@ use Raxon\Module\Dir;
 use Raxon\Module\Core;
 
 trait Config {
+    const COST = 5;
 
     /**
      * @throws Exception
@@ -50,24 +51,29 @@ trait Config {
             Dir::create($crypt_dir, Dir::CHMOD);
         }
         $crypt_url = $crypt_dir . Core::uuid() . '.key';
-        $string = $options->password;
-        if($crypt_url !== null) {
-            $key = Core::key($crypt_url);
-            for ($i = 0; $i < 5; $i++) {
-                $string = Crypto::encrypt($string, $key);
-            }
-            $string = gzencode($string, 9);
-            $string = base64_encode($string);
-        }
         $record = (object) [
             'username' => $options->username,
-            'password' => $string,
+            'password' => $this->encrypt($crypt_url, $options->password, self::COST),
             'crypt_url' => $crypt_url,
             'host' => $options->host,
             'port' => $options->port,
             'is' => $options->is,
         ];
         d($record);
+    }
+
+    public function encrypt($crypt_url, $string, $cost=1): ?string
+    {
+        if($crypt_url !== null) {
+            $key = Core::key($crypt_url);
+            for ($i = 0; $i < $cost; $i++) {
+                $string = Crypto::encrypt($string, $key);
+            }
+            $string = gzencode($string, 9);
+            $string = base64_encode($string);
+            return $string;
+        }
+        return null;
     }
 }
 
