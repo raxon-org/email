@@ -69,6 +69,10 @@ trait Config {
             'port' => $options->port,
             'is' => $options->is,
         ];
+        $node = new Node($object);
+        $class = 'System.Email.Config';
+        $response = $node->create($class, $node->role_system(), $record);
+        echo Core::object($response, Core::JSON) . PHP_EOL;
     }
 
     public function encrypt($crypt_url, $string, $cost=1): ?string
