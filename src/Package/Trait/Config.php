@@ -63,6 +63,7 @@ trait Config {
         $crypt_base_url = $crypt_dir . 'base.key';
         $crypt_url = $crypt_dir . Core::uuid() . '.key';
         $record = (object) [
+            'user' => $options->user,
             'username' => $options->username,
             'password' => $this->encrypt($crypt_url, $options->password, self::COST),
             'crypt_url' => $this->encrypt($crypt_base_url, $crypt_url, self::COST),
