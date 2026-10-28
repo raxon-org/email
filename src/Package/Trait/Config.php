@@ -34,12 +34,21 @@ trait Config {
         }
         if(
             !property_exists($options, 'is') &&
-            !property_exists($options, 'default')
+            !property_exists($options->is, 'default')
         ){
             if(!property_exists($options, 'is')){
                 $options->is = (object) [];
             }
             $options->is->default = false;
+        }
+        if(
+            !property_exists($options, 'is') &&
+            !property_exists($options, 'system')
+        ){
+            if(!property_exists($options, 'is')){
+                $options->is = (object) [];
+            }
+            $options->is->system = false;
         }
         $options->is->created = microtime(true);
         $email_dir = $object->config('project.dir.data') . 'Email/';
@@ -50,16 +59,16 @@ trait Config {
         if(!Dir::is($crypt_dir)){
             Dir::create($crypt_dir, Dir::CHMOD);
         }
+        $crypt_base_url = $crypt_dir . 'base.key';
         $crypt_url = $crypt_dir . Core::uuid() . '.key';
         $record = (object) [
             'username' => $options->username,
             'password' => $this->encrypt($crypt_url, $options->password, self::COST),
-            'crypt_url' => $crypt_url,
+            'crypt_url' => $this->encrypt($crypt_base_url, $crypt_url, self::COST),
             'host' => $options->host,
             'port' => $options->port,
             'is' => $options->is,
         ];
-        d($record);
     }
 
     public function encrypt($crypt_url, $string, $cost=1): ?string
