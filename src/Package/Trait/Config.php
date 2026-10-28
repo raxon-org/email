@@ -9,6 +9,7 @@ use Defuse\Crypto\Key;
 use Exception;
 use Raxon\Module\Dir;
 use Raxon\Module\Core;
+use Raxon\Node\Module\Node;
 
 trait Config {
     const COST = 5;
@@ -16,7 +17,7 @@ trait Config {
     /**
      * @throws Exception
      */
-    public function create(object $flags, object $options): void
+    public function create(object $flags, object $options): array
     {
         Core::interactive();
         $object = $this->object();
@@ -72,7 +73,7 @@ trait Config {
         $node = new Node($object);
         $class = 'System.Email.Config';
         $response = $node->create($class, $node->role_system(), $record);
-        echo Core::object($response, Core::JSON) . PHP_EOL;
+        return $response;
     }
 
     public function encrypt($crypt_url, $string, $cost=1): ?string
