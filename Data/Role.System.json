@@ -4,91 +4,91 @@
   "#class": "Account.Role",
   "permission": [
     {
-      "name": "System:Email:import",
+      "name": "System:Email:Config:import",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:record",
+      "name": "System:Email:Config:record",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:record.relation",
+      "name": "System:Email:Config:record.relation",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:create",
+      "name": "System:Email:Config:create",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:create.many",
+      "name": "System:Email:Config:create.many",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:count",
+      "name": "System:Email:Config:count",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:count.relation",
+      "name": "System:Email:Config:count.relation",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:commit",
+      "name": "System:Email:Config:commit",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:delete",
+      "name": "System:Email:Config:delete",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:delete.many",
+      "name": "System:Email:Config:delete.many",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:read",
+      "name": "System:Email:Config:read",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:read.relation",
+      "name": "System:Email:Config:read.relation",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:put",
+      "name": "System:Email:Config:put",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:put.many",
+      "name": "System:Email:Config:put.many",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:patch",
+      "name": "System:Email:Config:patch",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:patch.many",
+      "name": "System:Email:Config:patch.many",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:page",
+      "name": "System:Email:Config:page",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:page.relation",
+      "name": "System:Email:Config:page.relation",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:property.delete",
+      "name": "System:Email:Config:property.delete",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:list",
+      "name": "System:Email:Config:list",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:list.relation",
+      "name": "System:Email:Config:list.relation",
       "#class": "Account.Permission"
     },
     {
-      "name": "System:Email:rename",
+      "name": "System:Email:Config:rename",
       "#class": "Account.Permission"
     }
   ]
