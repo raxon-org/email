@@ -43,7 +43,7 @@ trait Config {
         }
         if(
             !property_exists($options, 'is') &&
-            !property_exists($options, 'system')
+            !property_exists($options->is, 'system')
         ){
             if(!property_exists($options, 'is')){
                 $options->is = (object) [];
